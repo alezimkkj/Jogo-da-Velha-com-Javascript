@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-area {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 50px 0;
+}
+
+.game-area div {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.game-area div:hover {
+    background-color: rgba(255, 255, 255, 0.100);
+}
+
+.b-r {
+    border-right: 2px solid white;
+}
+
+.b-b {
+    border-bottom: 2px solid white;
+}
+
+.play-info {
+    display: flex;
+    gap: 100px;
+}
+
+#warning, #vez {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 30px;
+}
+
+#reset {
+    font-size: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+}
